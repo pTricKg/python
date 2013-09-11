@@ -24,15 +24,15 @@ def number_to_name(number):
 # convert name to number function   
 def name_to_number(name):
     
-    if name == "rock":
+    if name == "rock".capitalize():
         return 0
-    elif name == "Spock":
+    elif name == "Spock".capitalize():
         return 1
-    elif name == "paper":
+    elif name == "paper".capitalize():
         return 2
-    elif name == "lizard":
+    elif name == "lizard".capitalize():
         return 3
-    else:
+    elif name == "scissors".capitalize():
         return 4
 # Greeting
 print("""
@@ -93,44 +93,69 @@ answers = ['rock', 'paper', 'scissors', 'lizard', 'Spock']
 print("\n\tLet battle!\n\nUsable answers are " + str(answers))
 print("\n\nLet's play best out of five throws!")
 
+print("\n\nThe rules are as follows: ")
+print("\n\tScissors cut Paper\n\
+        Paper covers Rock\n\
+        Rock crushes Lizard\n\
+        Lizard poisons Spock\n\
+        Spock smashes Scissors\n\
+        Scissors decapitates Lizard\n\
+        Lizard eats Paper\n\
+        Paper disproves Spock\n\
+        Spock vaporizes Rock\n\
+        Rock crushes Scissors")
+
 # count iterations of while loop
 count_win = 0
 count_lose = 0
-count = 0         
+count = 0
+countWinnerUser = 0
+countWinnerComp = 0
+tie = 0
 while count < 5:
     count = count + 1
-    ur_answer = input("\nThrow yours! ")
+    ur_answer = input("\nThrow yours! ").capitalize()
     print("\n\nYou threw " + ur_answer)
+
+    # check for valid input
+    if ur_answer != "Rock" or ur_answer != "Paper" or ur_answer != "Scissors"\
+       or ur_answer != "Lizard" or ur_answer != "Spock":
+        print("Invalid input!".upper())
+        break
     
     # convert name to player_number using name_to_number
     player_number = name_to_number(ur_answer)
 
     # compute random guess for comp_number using random.randrange()
     comp_number = random.randrange(5)
-    print("\nProgram chooses " + number_to_name(comp_number))
+    print("\nProgram chooses " + number_to_name(comp_number).capitalize())
 
     # compute difference of player_number and comp_number modulo five
     result = ((player_number - comp_number) % 5)
 
     if result == 0:
-        count_win = 0
+        tie = tie + 1
         print("\nUser and Program tie!")
         print("\n")
     elif result == 1:
         count_win = count_win + 1
+        countWinnerUser = countWinnerUser + 1
         print("\nUser wins!")
         print("\n")
     elif result == 2:
         count_win = count_win + 1
+        countWinnerUser = countWinnerUser + 1
         print("\nUser wins!")
         print("\n")
     elif result == 3:
         count_lose = count_lose + 1
+        countWinnerComp = countWinnerComp + 1
         print("\nProgram wins!")
         print("\n")
     else:
         count_lose = count_lose + 1
         print("\nProgram wins!")
+        countWinnerComp = countWinnerComp + 1
         print("\n")
 # Rules...
 ##scissor cut paper
@@ -151,6 +176,8 @@ elif count_win == count_lose:
     print("It's a draw, User!")
 else:
     print("User is no match for Program!\n\n")
+print("User won " + str(countWinnerUser) + " ,Program won " \
+      + str(countWinnerComp) + " and draw " + str(tie))
 print(
         """
          _____       ___       ___  ___   _____  
