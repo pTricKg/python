@@ -1,2 +1,2 @@
-# playing with Python
+# Playing with Python: A Learning Experience.
 ======
