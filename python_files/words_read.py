@@ -14,3 +14,4 @@ print (rd.lower())
 # seperate words into seperate strings
 print (rd.split())
 
+# mbox-short.txt

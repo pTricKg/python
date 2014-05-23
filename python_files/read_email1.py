@@ -8,6 +8,8 @@ for line in fh:
         continue                    # continue returns to loop
     
     count = count + 1               # counting iterations
+    flt0 = line.find(" ")
+    print (flt0)
     flt = line[19:]                 # extract float still in str format
     print (flt, count)              # checking
     flts = float(flt)               # making float from str
