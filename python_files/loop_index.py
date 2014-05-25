@@ -18,4 +18,36 @@ while index < len(word):
 # using for in even better
 for i in word:
     print (i)
+
+# prints word backwards while ~
+while index < len(word):
+    word1 = word[::-1]
+    print (word1)
+    index = index + 1
+
+##while index < len(word):
+    word1 = word[index:-1:1]
+    print (word1)
+    index = index + 1
+    # output 
+##supercalafragilou
+##upercalafragilou
+##percalafragilou
+##ercalafragilou
+##rcalafragilou
+##calafragilou
+##alafragilou
+##lafragilou
+##afragilou
+##fragilou
+##ragilou
+##agilou
+##gilou
+##ilou
+##lou
+##ou
+##u 
+    
+
+
     
