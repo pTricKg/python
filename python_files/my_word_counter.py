@@ -18,12 +18,15 @@ def my_counter():
     else:
         file_open = os.getcwd()
         print("Your file isn't located in this directory:",file_open)
-        clarify = input("You must clarify where your file is.")
+        clarify = input("You must clarify where your file is: ")
         print(clarify)
         chngdir = os.chdir(clarify)
         print(chngdir)
         file_open = os.getcwd()
-        handle = open(file_open.strip() + "/" + name, 'r')
+        print("Where we are now at", file_open)
+        file_open = file_open.rstrip() + "/" + name
+        print(file_open)
+        handle = open(file_open, 'r')
         text = handle.read()
         words = text.split()
 ##    except:
