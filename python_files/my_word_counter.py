@@ -49,8 +49,7 @@ def my_counter():
         user_decides_two = input("Yes to continue or anything else to not")
         if user_decides_two != str('yes'):
            print("Good Bye")
-           quit()
-        my_counter()
+        
     else:
         print ("Good Bye")
 
