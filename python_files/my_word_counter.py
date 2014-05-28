@@ -26,6 +26,7 @@ def my_counter():
         print("Where we are now at", file_open)
         file_open = file_open.rstrip() + "/" + name
         print(file_open)
+        
         handle = open(file_open, 'r')
         text = handle.read()
         words = text.split()
@@ -40,10 +41,15 @@ def my_counter():
     print ("There are",count,"words in this document.")
 
     user_decides = input("Would you like to count more?:")
-    if user_decides == str('yes' or 'Yes'):
+    user_decides.lower()
+    print(user_decides)
+    if user_decides == str('yes'):
         my_counter()
-    elif user_decides != str('yes' or 'Yes'):
-        input("Yes to continue or anything else to not")
+    elif user_decides != str('yes'):
+        user_decides_two = input("Yes to continue or anything else to not")
+        if user_decides_two != str('yes'):
+           print("Good Bye")
+           quit()
         my_counter()
     else:
         print ("Good Bye")
