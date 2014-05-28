@@ -75,7 +75,7 @@ print(inventory)
 names = ["Adam","Alex","Mariah","Martine","Columbus"]
 
 for peeps in names:
-	print peeps
+	print (peeps)
 
 Webster = {
      "Aardvark" : "A star of a popular children's cartoon show.",
@@ -97,7 +97,7 @@ for numb in A:
 	if (numb % 2 != 0):
 		null
 	else:
-		print numb
+		print (numb)
 
 ###looping through strings
 for c in "Codecademy":
