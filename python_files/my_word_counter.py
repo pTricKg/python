@@ -5,10 +5,7 @@ def my_counter():
     dr = os.getcwd()
     print("You are here:",dr)
     print(name, "is your input")
-##    file_open = os.chdir(name)
-##    print(file_open)
-##    file_open = os.getcwd()
-##    print(file_open)
+
     #try:
         
     if name.startswith("/"):

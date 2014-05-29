@@ -26,8 +26,7 @@ def lwr_py():
 """
           , rd)
 
-##    for echdoc in folder:
-##        echdoc.lower()
+
         
 
     
