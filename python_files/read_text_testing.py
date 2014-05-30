@@ -10,7 +10,7 @@ for line in fh:
             continue
         else:
             lst.append(word) #this seems to do the trick
-        print("this is list:",lst)
+    print("this is list:",lst)
     #this is putting a list inside a list: not wanted result
 ##    lst.append(line)
 ##    print(lst)
