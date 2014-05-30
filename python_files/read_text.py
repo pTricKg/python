@@ -5,10 +5,10 @@ for line in fh:
     print("\nThis is line:",line)
     line = line.split()
     print("This is line after split:",line)
-    if line in lst:
+    if line[0] in lst:
         continue
     else:
         lst.append(line)
-    print("\nThis is list:",lst)
-
+        print("\nThis is list:",lst)
+        
 #print (line.rstrip())
