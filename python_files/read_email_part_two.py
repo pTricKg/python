@@ -5,11 +5,18 @@ fh = open(fname, 'r')
 count = 0
 
 for line in fh:
-    if not line.startswith("From"):
+    if line.startswith("From"):
+        splt = line.split()
+##        spc = line.find(" ")
+##        spc2 = line.find(" ", spc)
+##        #print(line[spc:" "])
+##        print(line[spc:])
+        print(splt)
+        print(splt[1]) # this is what we're looking for
+        count = count + 1
+        print("this is count:",count)
+    else:
         continue
-    count = count + 1
-    print("this is count:",count)
-    spc = line.find(" ")
-    print(line[spc:])
+    
 
 print ("There were", count, "lines in the file with From as the first word")
