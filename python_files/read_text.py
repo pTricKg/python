@@ -11,4 +11,4 @@ for line in fh:
         lst.append(line)
     print("\nThis is list:",lst)
 
-##print (line.rstrip())
+#print (line.rstrip())
