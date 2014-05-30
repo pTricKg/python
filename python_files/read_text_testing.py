@@ -11,6 +11,8 @@ for line in fh:
         else:
             lst.append(word) #this seems to do the trick
     print("this is list:",lst)
+final = sorted(lst)
+print("this is list sorted:",final)
     #this is putting a list inside a list: not wanted result
 ##    lst.append(line)
 ##    print(lst)
