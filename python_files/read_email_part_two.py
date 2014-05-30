@@ -1,5 +1,5 @@
 fname = input("Enter file name: ")
-if len(fname) < 1 : fname = "mbox-short.txt"
+if len(fname) < 1 : fname = "mbox-short.txt" # this adds file if no input
 
 fh = open(fname, 'r')
 count = 0
