@@ -16,4 +16,5 @@ while day < month:
     print("This is current value:",cash)
 ##    for days in range(30):
 ##        days = days * 2
+print("Now you have", cash, "dollars!!")
     
