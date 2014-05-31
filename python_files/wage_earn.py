@@ -1,6 +1,6 @@
 # Calculate Earnings
 
-##def wage():
+#def wage():
 inp = float(input("What is your hourly rate: "))
 inp2 = float(input("How many hours are you working: "))
 
