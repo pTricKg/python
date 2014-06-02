@@ -1,5 +1,5 @@
-# This goes through given input, makes list
-# then give maximum and minumum from input
+### This goes through given input, makes list
+### then give maximum and minumum from input
 
 nums = list()
 while True:
@@ -45,3 +45,15 @@ while True:
 	count = count + 1
 average = total / count
 print('Average:',average)
+
+# A bit cleaner version of above using built-in functions and list
+
+numlist = []
+
+while True:
+    inp = input('Enter a number:')
+    if inp == 'done': break
+    value = float(inp)
+    numlist.append(value)
+average = sum(numlist) / len(numlist)
+print('Average:', average)
