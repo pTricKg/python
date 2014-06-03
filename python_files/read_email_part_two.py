@@ -1,4 +1,7 @@
+# This pulls emails from text given and splits out domain as well
+
 fname = input("Enter file name: ")
+
 if len(fname) < 1 : fname = "mbox-short.txt" # this adds file if no input
 
 fh = open(fname, 'r')
