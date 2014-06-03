@@ -8,7 +8,7 @@ for line in fh:
     if line.startswith("From "): #added  space to be sure not to include From:
         splt = line.split()
 
-        print(splt[1]) # this is what we're looking for
+        print("This is email address:",splt[1]) # this is what we're looking for
         count = count + 1
         print("this is count:",count)
         slt2 = splt[1].split('@')
