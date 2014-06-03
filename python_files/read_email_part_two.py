@@ -14,8 +14,8 @@ for line in fh:
         print("This is email address:",splt[1]) # this is what we're looking for
         count = count + 1
         print("this is count:",count)
-        slt2 = splt[1].split('@')
-        domain = slt2[1]
+        splt2 = splt[1].split('@')
+        domain = splt2[1]
         print("this is domain:",domain)
     else:
         continue
