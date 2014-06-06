@@ -33,12 +33,20 @@ for line in handle:
             print(mydict)
 
         # or same as if else above:
-        mydict[eml] = mydict.get(eml,0) + 1
+##        mydict[eml] = mydict.get(eml,0) + 1
              
     else:
         continue
 
 
 print("Final count:",count,"Final dictionary:",mydict)
-print(max(eml))
+mylist = []
+for key in mydict:
+    print(key,"=",mydict[key])
+    getmax = mydict[key]
+    mylist.append(getmax)
+print(mylist)
+maximum = max(mylist)
+print(maximum)
+    
 
