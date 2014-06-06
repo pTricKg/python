@@ -19,13 +19,21 @@ for line in handle:
         count = count + 1
         print("this is count:",count)
         #mydict = mydict[splt[1]]
-        mydict[eml] = 1
-        print(mydict)
         
-        if eml == mydict:
-            mydict[splt[1]] = mydict[splt[1]] + 1
         print(mydict)
+        print(eml in mydict)
+        # previous mistake was adding to dictionary without
+        # first checking if it is there or not
+        if eml not in mydict:
+            mydict[eml] = 1
+        # then if it is, increment that by one
+        else:
+            mydict[eml] = mydict[eml] + 1
+            print(mydict)
+                   
     else:
         continue
+
+
 print("Final count:",count,"Final dictionary:",mydict)
 
