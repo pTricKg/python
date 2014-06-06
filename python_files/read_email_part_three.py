@@ -40,13 +40,26 @@ for line in handle:
 
 
 print("Final count:",count,"Final dictionary:",mydict)
-mylist = []
-for key in mydict:
-    print(key,"=",mydict[key])
-    getmax = mydict[key]
-    mylist.append(getmax)
-print(mylist)
-maximum = max(mylist)
-print(maximum)
+
+# following uses dual iteration variables for .items()
+
+maxcount = None
+maxemail = None
+
+for email, count in mydict.items():
+    if maxcount is None or count > maxcount:
+        maxcount = count
+        maxemail = email
+print(maxemail,maxcount)
+    
+
+##mylist = []
+##for key in mydict:
+##    print(key,"=",mydict[key])
+##    getmax = mydict[key]
+##    mylist.append(getmax)
+##print(mylist)
+##maximum = max(mylist)
+
     
 
