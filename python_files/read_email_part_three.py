@@ -9,10 +9,16 @@ for line in handle:
         splt = line.split()
 
         print("This is email address:",splt[1]) # this is what we're looking for
+        eml = splt[1]
+        print(eml)
         count = count + 1
         print("this is count:",count)
         #mydict = mydict[splt[1]]
-        mydict[splt[1]] = count + 1
+        mydict[splt[1]] = 1
+        print(mydict)
+        
+        for eml in mydict:
+            mydict[splt[1]] = mydict[splt[1]] + 1
         print(mydict)
     else:
         continue
