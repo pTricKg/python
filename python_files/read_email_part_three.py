@@ -11,7 +11,8 @@ for line in handle:
         print("This is email address:",splt[1]) # this is what we're looking for
         count = count + 1
         print("this is count:",count)
-        mydict = {splt[1] + 1}
+        #mydict = mydict[splt[1]]
+        mydict[splt[1]] = count + 1
         print(mydict)
     else:
         continue
