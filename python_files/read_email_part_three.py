@@ -43,10 +43,15 @@ print("Final count:",count,"Final dictionary:",mydict)
 
 # following uses dual iteration variables for .items()
 
+# first we create none variable for later use
 maxcount = None
 maxemail = None
 
+# here we loop through dictionary key:value pairs
+# storing interations in seperate variables for email and count
 for email, count in mydict.items():
+    # check if count exceeds maxcount
+    # then if so, maxcount equals count
     if maxcount is None or count > maxcount:
         maxcount = count
         maxemail = email
