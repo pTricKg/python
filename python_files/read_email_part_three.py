@@ -26,14 +26,19 @@ for line in handle:
         # first checking if it is there or not
         if eml not in mydict:
             mydict[eml] = 1
+            
         # then if it is, increment that by one
         else:
             mydict[eml] = mydict[eml] + 1
             print(mydict)
-                   
+
+        # or same as if else above:
+        mydict[eml] = mydict.get(eml,0) + 1
+             
     else:
         continue
 
 
 print("Final count:",count,"Final dictionary:",mydict)
+print(max(eml))
 
