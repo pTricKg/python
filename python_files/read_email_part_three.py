@@ -50,7 +50,7 @@ maxemail = None
 # here we loop through dictionary key:value pairs
 # storing interations in seperate variables for email and count
 for email, count in mydict.items():
-    # check if count exceeds maxcount
+    # check if count exceeds maxcount yet
     # then if so, maxcount equals count
     if maxcount is None or count > maxcount:
         maxcount = count

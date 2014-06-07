@@ -2,6 +2,7 @@
 ### then give maximum and minumum from input
 
 nums = list()
+
 while True:
 
     inp = input('Enter a number: ')
