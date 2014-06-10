@@ -13,14 +13,16 @@ class BankAccount:
         negative balance also deducts a penalty fee of 5 dollars from the balance.
         """
         self.amount = self.initial_balance - amount
+        if self.initial_balance - self.amount < 0:
+            fee = self.initial_balance - 5
+            return fee
         return self.amount
     def get_balance(self):
         """Returns the current balance in the account."""
         return self.initial_balance
     def get_fees(self):
         """Returns the total fees ever deducted from the account."""
-        if self.initial_balance < 0:
-            fee = self.initial_balance - 5
+        
         return fee
 
 
