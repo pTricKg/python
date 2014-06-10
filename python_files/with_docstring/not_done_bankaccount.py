@@ -11,7 +11,9 @@ class BankAccount:
         self.dpst = amount
         self.initial_balance += self.dpst
         print("This is your deposit:",self.dpst)
+        print("This is your bal after deposit:",self.initial_balance)
         return self.initial_balance
+        
             
     def withdraw(self, amount):
         """
@@ -20,17 +22,21 @@ class BankAccount:
         """
         self.wthdrw = amount
         print("This is your withdrawal:",self.wthdrw)
-        
-        if self.initial_balance - self.wthdrw < 0:
-            fee = self.initial_balance - 5
-            print("This is overdraft fee:", fee)
-            return fee
-        
-        return self.wthdrw
+                
+        if self.initial_balance < self.wthdrw:
+            self.initial_balance -= self.wthdrw
+            print("This is new bal after withdrawal:",self.initial_balance)
+            fee = 5
+            self.initial_balance = self.initial_balance - fee
+            print("New bal after withdrawal:",self.initial_balance,\
+                  "including overdraft fee of",fee)
+            return self.initial_balance
+            
+            
     
     def get_balance(self):
         """Returns the current balance in the account."""
-        return self.initial_balance # + self.dpst - self.wthdrw
+        return self.initial_balance
     
     def get_fees(self):
         """Returns the total fees ever deducted from the account."""
@@ -44,5 +50,5 @@ my_account = BankAccount(10)
 print("This is your initial account balance:",my_account.get_balance())
 my_account.withdraw(15)
 my_account.deposit(5)
-print ("This is your account balance:",my_account.get_balance())
+print ("This is your final account balance:",my_account.get_balance())
 
