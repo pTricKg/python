@@ -6,7 +6,7 @@ class BankAccount:
     def deposit(self, amount):
         """Deposits the amount into the account."""
         self.amount = self.initial_balance + amount
-        return amount
+        return self.amount 
     def withdraw(self, amount):
         """
         Withdraws the amount from the account.  Each withdrawal resulting in a
@@ -26,6 +26,6 @@ class BankAccount:
 
 # To Test:
 my_account = BankAccount(10)
-#my_account.withdraw(15)
-my_account.deposit(20)
+my_account.withdraw(15)
+my_account.deposit(5)
 print (my_account.get_balance())
