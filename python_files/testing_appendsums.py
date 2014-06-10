@@ -15,16 +15,16 @@ def appendsums(lst):
 ##
 ##    print(val1,val2,val3,"and final sum:",final)
     
-    
-    for vals in lst:
-
-        print("From list",lst[vals])
-        lst.append(vals)
-        print("Append",lst)
         
+    for vals in lst:
+        
+        print("From list",lst[vals])
+        #lst_len = len(lst) - 1
+        lst.append(lst[lst[- 1]] + lst[lst[ - 2]] + lst[lst[ - 3]])
+        print("Append",lst)            
         
 
 ## my_list = [0,2,3]
 ##
 ## appendsums(my_list)
-##appendsums([0,1,2])
+## appendsums([0,1,2])
