@@ -40,13 +40,12 @@ class BankAccount:
     
     def get_fees(self):
         """Returns the total fees ever deducted from the account."""
-        
+        print(fee)
         return fee
 
 
 # To Test:
 my_account = BankAccount(10)
-# this forces atributeerror due to none dpst/wthdrw found when initially called
 print("This is your initial account balance:",my_account.get_balance())
 my_account.withdraw(15)
 my_account.deposit(5)
