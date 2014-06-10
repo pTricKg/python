@@ -9,8 +9,9 @@ class BankAccount:
     def deposit(self, amount):
         """Deposits the amount into the account."""
         self.dpst = amount
+        self.initial_balance += self.dpst
         print("This is your deposit:",self.dpst)
-        return self.dpst
+        return self.initial_balance
             
     def withdraw(self, amount):
         """
@@ -29,7 +30,7 @@ class BankAccount:
     
     def get_balance(self):
         """Returns the current balance in the account."""
-        return self.initial_balance + self.dpst - self.wthdrw
+        return self.initial_balance # + self.dpst - self.wthdrw
     
     def get_fees(self):
         """Returns the total fees ever deducted from the account."""
@@ -39,6 +40,8 @@ class BankAccount:
 
 # To Test:
 my_account = BankAccount(10)
+# this forces atributeerror due to none dpst/wthdrw found when initially called
+print("This is your initial account balance:",my_account.get_balance())
 my_account.withdraw(15)
 my_account.deposit(5)
 print ("This is your account balance:",my_account.get_balance())
