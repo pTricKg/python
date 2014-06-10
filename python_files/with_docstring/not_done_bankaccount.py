@@ -40,8 +40,12 @@ class BankAccount:
     
     def get_fees(self):
         """Returns the total fees ever deducted from the account."""
-        print(fee)
-        return fee
+        count_fee = 0
+        if self.initial_balance < 0:
+            count_fee = count_fee + 1
+        fees = count_fee * 5
+        print("Total fees:",fees)
+        return fees
 
 
 # To Test:
