@@ -12,7 +12,9 @@ def appendsums(lst):
         print("Append",lst)            
         
 
-## my_list = [0,1,2]
+##my_list = [0,1,2]
 ##
-## appendsums(my_list)
-## appendsums([0,1,2])
+##appendsums(my_list)
+#### appendsums([0,1,2])
+##print (my_list[10])
+##print (my_list[20])
