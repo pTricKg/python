@@ -32,5 +32,16 @@ for lines in handle:
             counts[count] = counts.get(count, 0) + 1
 
         print(counts)
+
+        tmplist = list()
+
+        for key, val in counts.items():
+            tmplist.append( (key, val) ) # append tuples
+
+        tmplist.sort()
+
+        for key, val in tmplist:
+            print(key, val)
+            
         
     
