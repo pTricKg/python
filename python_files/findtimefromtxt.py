@@ -6,17 +6,10 @@ handle = open(name)
 
 lst = list()
 
-
-
 for lines in handle:
     if lines.startswith("From "):
         print(lines)
         # find space before time starts
-##        fnd = tm.find(" ",tm.find(" ",tm.find\
-##                                        (" ",tm.find\
-##                                         (" ",tm.find\
-##                                          (" ",tm.find(" ")\
-##                                           + 1)+ 1)+ 1)+ 1)+ 1)
         fnd = lines.find(" ",lines.find(" ",lines.find\
                                         (" ",lines.find\
                                          (" ",lines.find\
