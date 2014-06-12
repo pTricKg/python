@@ -10,3 +10,6 @@ print(tmplst)
 tmplst.sort(reverse=True) # sort in reverse 
 
 print(tmplst)
+
+# use list comprehension
+print(sorted( [ (v, k) for k, v in d.items() ] ))
