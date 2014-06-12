@@ -6,7 +6,7 @@ handle = open(name)
 
 lst = list()
 
-counts = dict()
+
 
 for lines in handle:
     if lines.startswith("From "):
@@ -24,10 +24,11 @@ for lines in handle:
                                            + 1)+ 1)+ 1)+ 1)+ 1)
         print(fnd)
         time = lines[fnd + 1:fnd + 3]
-##        lst.append(time)
-##        print(lst)
+        lst.append(time)
+        print(lst)
         print(time)
-        for count in time:
+        counts = dict()
+        for count in lst:
             counts[count] = counts.get(count, 0) + 1
 
         print(counts)
