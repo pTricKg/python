@@ -1,6 +1,7 @@
 # eg. txttoread = open('romeo.txt')
 
-user = input("Please enter path to file to be read or file in current directory: > ")
+user = input("Please enter path to file to be read\
+             or file in current directory: > ")
 
 txttoread = open(user)
              
