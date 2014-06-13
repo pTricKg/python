@@ -15,6 +15,7 @@ for lines in handle:
                                          (" ",lines.find\
                                           (" ",lines.find(" ")\
                                            + 1)+ 1)+ 1)+ 1)+ 1)
+        
         time = lines[fnd + 1:fnd + 3]
         lst.append(time)
         
@@ -31,6 +32,8 @@ tmplist.sort()
 
 for key, val in tmplist:
     print(key, val)
+
+    
         
         
     

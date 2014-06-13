@@ -1,4 +1,10 @@
-txttoread = open('romeo.txt')
+# eg. txttoread = open('romeo.txt')
+
+user = input("Please enter path to file to be read or file in current directory: > ")
+
+txttoread = open(user)
+             
+    
 
 counts = dict()
 
