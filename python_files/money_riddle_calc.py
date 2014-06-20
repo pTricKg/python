@@ -1,3 +1,11 @@
+# This is calculation riddle:
+"""
+If i were to give you two cents everyday for a month and
+each day give you twice as much as the day before, how much
+money will you have after that month?
+
+"""
+
 day = 1
 month = 30
 cash = 0.01
