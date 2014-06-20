@@ -1,3 +1,5 @@
+### Using list to sort dictionary by value instead of key
+
 d = {'a':20, 'b':5, 'c':10} # created dict
 
 tmplst = [] # empty list to be filled with tuples
