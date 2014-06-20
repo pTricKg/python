@@ -1,8 +1,8 @@
 # This is calculation riddle:
 """
-If i were to give you two cents everyday for a month and
+If i were to give you two cents everyday for 30 days and
 each day give you twice as much as the day before, how much
-money will you have after that month?
+money will you have after that final day?
 
 """
 
@@ -18,4 +18,4 @@ while day < month:
     for days in range(30):
         days = days * 2
 
-print("\n\nAfter one month you will have",cash,"in cold cash")
+print("\n\nAfter 30 days you will have",cash,"in cold cash")
