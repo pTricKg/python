@@ -1,3 +1,6 @@
+# This takes input file or given file if none exist
+# then finds time input and gives count for each time
+
 name = input("Enter file:")
 
 if len(name) < 1 : name = "mbox-short.txt"
@@ -14,7 +17,7 @@ for lines in handle:
                                         (" ",lines.find\
                                          (" ",lines.find\
                                           (" ",lines.find(" ")\
-                                           + 1)+ 1)+ 1)+ 1)+ 1)
+                                           + 1)+ 1)+ 1)+ 1)+ 1) # sloppy but works
 
         time = lines[fnd + 1:fnd + 3]
         lst.append(time)
