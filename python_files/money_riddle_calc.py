@@ -1,7 +1,7 @@
 # This is calculation riddle:
 
 print("""
-If i were to give you two cents everyday for 30 days and
+If i were to give you one cent everyday for 30 days but
 each day give you twice as much as the day before, how much
 money will you have after that final day?
 
