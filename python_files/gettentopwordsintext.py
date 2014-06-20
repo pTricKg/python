@@ -1,5 +1,8 @@
 # eg. txttoread = open('romeo.txt')
 
+# From user given text file, split all words and count.
+# Returns top words in text given by sorting by value instead of key
+
 user = input("Please enter path to file to be read \
 or file in current directory: > ")
 
