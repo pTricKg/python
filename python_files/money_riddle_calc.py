@@ -18,3 +18,4 @@ while day < month:
     for days in range(30):
         days = days * 2
 
+print("After one month you will have",cash)
