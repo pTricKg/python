@@ -6,6 +6,8 @@ each day give you twice as much as the day before, how much
 money will you have after that final day?
 
 Think about it for a moment.
+
+You'll be surprised!
 """)
 
 input("Press enter when ready to see result\n")
