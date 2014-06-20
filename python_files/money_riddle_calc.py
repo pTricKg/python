@@ -1,10 +1,14 @@
 # This is calculation riddle:
-"""
+
+print("""
 If i were to give you two cents everyday for 30 days and
 each day give you twice as much as the day before, how much
 money will you have after that final day?
 
-"""
+Think about it for a moment.
+""")
+
+input("Press enter when ready to see result\n")
 
 day = 1
 month = 30
