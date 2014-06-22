@@ -1,5 +1,10 @@
 import os
 
+""" Getting user input to open file.  Tell them where they are so file can
+    be found.  Read file and count words.  Ask user if they would like
+    to look at another file
+    """
+
 def my_counter():
     name = input('Enter file or path to file: ')
     dr = os.getcwd()
