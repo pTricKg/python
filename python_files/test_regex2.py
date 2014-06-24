@@ -13,7 +13,10 @@ for line in hand:
 # . match any character
 # \S match any non-whitespace character
 # +  one or more times
-# [] list inside 
+# [] list inside
+# ? prevents greedy search, will stop as soon match found(without find biggest
+# string
+
 
 import re
 
