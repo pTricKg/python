@@ -17,8 +17,6 @@ for line in hand:
 # ? prevents greedy search, will stop as soon match found(without find biggest
 # string
 # () extract from inside
-# $ end of line
-# \ escape
 
 
 import re
