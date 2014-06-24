@@ -13,6 +13,7 @@ for line in hand:
 # . match any character
 # \S match any non-whitespace character
 # +  one or more times
+# [] list inside 
 
 import re
 
@@ -21,3 +22,5 @@ for line in hand:
     line = line.rstrip()
     if re.search('^X-\S+',line): # if line starts with From:
         print(line)
+
+y = re.findall('[0-9]+',x) # find matching strings via regex
