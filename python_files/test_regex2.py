@@ -29,4 +29,6 @@ for line in hand:
 
 y = re.findall('[0-9]+',x) # find matching strings via regex
 x = re.findall('\S+@\S+', x) # find email
-z = re.findall('^From (\S+@\S+)',x)
+z = re.findall('^From (\S+@\S+)',x) # extract only email addy after from:
+a = re.findall('@ ([^ ]+)') # extract after @
+b = re.findall('^From .*@([^ ]+)')
