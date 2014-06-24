@@ -8,3 +8,4 @@ for line in hand:
 
 # ^ equals begin of line
 # * any number of times
+# . match any character
