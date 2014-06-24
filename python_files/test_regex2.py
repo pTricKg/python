@@ -27,3 +27,4 @@ for line in hand:
         print(line)
 
 y = re.findall('[0-9]+',x) # find matching strings via regex
+x = re.findall('\S+@\S+', x) # find email 
