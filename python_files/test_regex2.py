@@ -16,6 +16,7 @@ for line in hand:
 # [] list inside
 # ? prevents greedy search, will stop as soon match found(without find biggest
 # string
+# () extract from inside
 
 
 import re
@@ -27,4 +28,5 @@ for line in hand:
         print(line)
 
 y = re.findall('[0-9]+',x) # find matching strings via regex
-x = re.findall('\S+@\S+', x) # find email 
+x = re.findall('\S+@\S+', x) # find email
+z = re.findall('^From (\S+@\S+)',x)
