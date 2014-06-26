@@ -4,5 +4,14 @@ translate['one'] = 'uno'
 
 translate['two'] = 'dos'
 
+usr = str(input("Give me number:"))
 
 
+
+if usr != '':
+    if usr == 'one':
+        print(translate['one'])
+    elif usr != translate['one']:
+        print('Whoops')
+else:
+    print("Give me something")
