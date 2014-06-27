@@ -43,12 +43,12 @@ print("Second dictionary:",dtwo)
 """ Using dictionary to find and count freq """
 
 opn = open('nineteen_eighty_four.txt')
-rd = opn.read().lower()
+rd = opn.read()
 splt = rd.split()
 d = {}
 
 for i in splt:
-    if 'speak' in i or 'double' in i or 'think' in i or 'party' in i:
+    if 'speak' in i or 'double' in i or 'think' in i or 'party' in i or 'thought' in i:
         if i not in d:
             d[i] = 1
         else:
