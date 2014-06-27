@@ -25,9 +25,11 @@ import random
 d = dict()
 
 opn = open('romeo.txt')
-val = random.choice(['dumb', 'as if', 'like, really', 'oh my gosh', 'shoot'])
+val = ['dumb', 'as if', 'like, really', 'oh my gosh', 'shoot']
 
 for words in opn:
-    
-    d[words] = val
+    d[words] = random.choice(val)
     print(d,'\n')
+    print(words in d)
+
+
