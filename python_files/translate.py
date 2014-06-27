@@ -28,7 +28,9 @@ opn = open('romeo.txt')
 val = ['dumb', 'as if', 'like, really', 'oh my gosh', 'shoot']
 
 for words in opn:
-    d[words] = random.choice(val)
+    word = words.split()
+    print(word)
+    d[words] = random.choice(word)
     print(d,'\n')
     print(words in d)
 
