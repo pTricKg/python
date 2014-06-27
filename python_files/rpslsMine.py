@@ -119,10 +119,6 @@ while count < 5:
     print("\n\nYou threw " + ur_answer)
 
     # check for valid input
-##    if ur_answer != 'rock' or ur_answer != "paper" or ur_answer != "scissors"\
-##       or ur_answer != "lizard" or ur_answer != "spock":
-##        print("Invalid input!".upper())
-##        continue
     # add try/except to get errors handled
     try:
         # convert name to player_number using name_to_number
