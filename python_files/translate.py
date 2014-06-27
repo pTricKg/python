@@ -29,9 +29,9 @@ val = ['dumb', 'as if', 'like, really', 'oh my gosh', 'shoot']
 
 for words in opn:
     word = words.split()
-    print(word)
+##    print(word)
     d[words] = random.choice(word)
     print(d,'\n')
     print(words in d)
-
+print(d,'\n')
 
