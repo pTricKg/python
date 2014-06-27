@@ -114,6 +114,7 @@ countWinnerUser = 0
 countWinnerComp = 0
 tie = 0
 frst_answer = int(input('\nHow many throws you want?'))
+print('\nOkay, best out of', frst_answer,'wins! Good luck User')
     
 while count < frst_answer:
     count = count + 1
