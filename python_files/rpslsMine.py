@@ -113,7 +113,9 @@ count = 0
 countWinnerUser = 0
 countWinnerComp = 0
 tie = 0
-while count < 5:
+frst_answer = int(input('\nHow many throws you want?'))
+    
+while count < frst_answer:
     count = count + 1
     ur_answer = str(input("\nThrow yours! ").lower())
     print("\n\nYou threw " + ur_answer)
