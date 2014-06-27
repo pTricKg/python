@@ -123,7 +123,7 @@ while count < 5:
 ##       or ur_answer != "lizard" or ur_answer != "spock":
 ##        print("Invalid input!".upper())
 ##        continue
-    # add try/catch to get errors handled
+    # add try/except to get errors handled
     try:
         # convert name to player_number using name_to_number
         player_number = name_to_number(ur_answer)
