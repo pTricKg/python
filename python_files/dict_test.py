@@ -28,21 +28,16 @@ print("Total:", total)
     
 
 
-##val = d.values()
-##
-##print(val)
-##vlist = []
-##dtwo = {}
-##
-##for v in val:
-##    vlist.append(v)
-##    for i in vlist:
-##        if i >= 5:
-##            if i not in dtwo:
-##                dtwo[i] = dtwo[i] + 1
-##            else:
-##                dtwo[i] = dtwo[i] + 1
-##print(dtwo)
+val = d.values()
+dtwo = {}
+
+print(val)
+
+for k,v in d.items():
+    if v >= 5:
+       dtwo[v] = v
+print("Second dictionary:",dtwo)
+
 
 
 """ Using dictionary to find and count freq """
