@@ -1,3 +1,5 @@
+import random
+
 ##translate = dict()
 ##
 ##translate['one'] = 'uno'
@@ -23,9 +25,9 @@
 d = dict()
 
 opn = open('romeo.txt')
-val = 0
+val = random.choice(['dumb', 'as if', 'like, really', 'oh my gosh', 'shoot'])
 
 for words in opn:
     
-    d[words] = words
+    d[words] = val
     print(d,'\n')
