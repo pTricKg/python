@@ -35,7 +35,7 @@ print(val)
 
 for k,v in d.items():
     if v >= 5:
-       dtwo[v] = v
+       dtwo[k] = v
 print("Second dictionary:",dtwo)
 
 
