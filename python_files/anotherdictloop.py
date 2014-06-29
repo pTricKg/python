@@ -26,8 +26,7 @@ for key in mylst:
 
 for key in counts:
     if counts[key] > 5:
-        print('Words that appear at least 5 times:',key, counts[key])
-
+        print('Word that appears at least 5 times:',key, '->', counts[key])
 
 ##mylst = []
 ##for key, value in counts.items():
