@@ -1,3 +1,5 @@
+import string
+
 inpt = input('Enter your file name:')
 if len(inpt) < 1 : inpt = "nineteen_eighty_four.txt"
 try:
@@ -8,6 +10,10 @@ except:
 
 counts = dict()
 for line in inpt:
+    # add check for punctuation
+    line = line.translate(string.punctuation)
+    # lowercase
+    line = line.lower()
     words = line.split()
     for word in words:
         if word not in counts:
