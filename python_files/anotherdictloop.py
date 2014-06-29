@@ -10,8 +10,10 @@ except:
 
 counts = dict()
 for line in inpt:
-    # add check for punctuation
-    line = line.translate(string.punctuation)
+    # add check for punctuation and remove if present
+    for c in string.punctuation:
+        line = line.replace(c,"")
+    #line = line.translate(string.maketrans('',''),string.punctuation)
     # lowercase
     line = line.lower()
     words = line.split()
