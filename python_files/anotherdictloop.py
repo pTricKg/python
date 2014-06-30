@@ -25,8 +25,8 @@ for line in inpt:
 
 print(counts)
 
-mylst = list(counts)
-mylst.sort()
+mylst = list(counts) # make list
+mylst.sort() # alphabetize
 print(mylst)
 
 for key in mylst:
