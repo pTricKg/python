@@ -1,4 +1,7 @@
 #
+
+""" A simple game of Rock, Paper, Scissors, Lizard, Spock """
+
 # 0 - rock
 # 1 - Spock
 # 2 - paper
@@ -113,16 +116,17 @@ count = 0
 countWinnerUser = 0
 countWinnerComp = 0
 tie = 0
-frst_answer = int(input('\nHow many throws you want?'))
-print('\nOkay, best out of', frst_answer,'wins! Good luck User')
-    
-while count < frst_answer:
+while count < 5:
     count = count + 1
     ur_answer = str(input("\nThrow yours! ").lower())
     print("\n\nYou threw " + ur_answer)
 
     # check for valid input
-    # add try/except to get errors handled
+##    if ur_answer != 'rock' or ur_answer != "paper" or ur_answer != "scissors"\
+##       or ur_answer != "lizard" or ur_answer != "spock":
+##        print("Invalid input!".upper())
+##        continue
+    # add try/catch to get errors handled
     try:
         # convert name to player_number using name_to_number
         player_number = name_to_number(ur_answer)
