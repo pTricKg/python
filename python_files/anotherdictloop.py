@@ -36,9 +36,11 @@ for key in counts:
     if counts[key] > 5:
         print('Word that appears at least 5 times:',key, '->', counts[key])
 
-##mylst = []
-##for key, value in counts.items():
-##    mylst.append([key, value])
-##print(mylst)
-##
-##print(mylst.sort())
+
+## This didnt't do what I needed
+mylst = []
+for key, value in counts.items():
+    mylst.append([key, value])
+print(mylst)
+
+print(mylst.sort())
