@@ -1,5 +1,7 @@
 import string
+
 """ Testing dictionarys """
+
 inpt = input('Enter your file name:')
 if len(inpt) < 1 : inpt = "nineteen_eighty_four.txt"
 try:
