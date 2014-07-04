@@ -11,7 +11,7 @@ def my_counter():
     print("You are here:",dr)
     print(name, "is your input")
 
-    #try:
+##    try:
         
     if name.startswith("/"):
         handle = open(name, 'r')
