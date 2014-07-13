@@ -27,3 +27,12 @@ for length, word in lst:
     rev.append(word)
 
 print("here is final loop: ",rev)
+
+# get 
+seclst = list()
+for l in rev:
+    
+    if len(l) > 10:
+        seclst.append(l)
+print(seclst)
+    
