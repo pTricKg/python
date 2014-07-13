@@ -4,21 +4,21 @@ opn = input("Enter file: ")
 
 if len(opn) < 1: opn = "nineteen_eighty_four.txt"
 rd = open(opn)
-
+rd = rd.readlines()
 #print(rd)
-print(opn)
+#print(opn)
 words = str(rd)
 words = words.split()
-print(words)
+print("word list: ",words)
 lst = list()
-print(lst)
+#print(lst)
 for word in rd:
     lst.append((len(word), word))
-
+print("here is first loop: ",lst)
 lst.sort(reverse = True)
 
 rev = list()
 for length, word in lst:
     rev.append(word)
 
-#print(rev)
+print("here is final loop: ",rev)
