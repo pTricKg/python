@@ -12,8 +12,10 @@ rd = rd.readlines()
 words = str(rd)
 words = words.split()
 print("word list: ",words)
+
 lst = list()
 #print(lst)
+# loop through words to get length of words
 for word in rd:
     lst.append((len(word), word))
 print("here is first loop: ",lst)
