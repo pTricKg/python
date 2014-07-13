@@ -22,6 +22,7 @@ print("here is first loop: ",lst)
 lst.sort(reverse = True)
 
 rev = list()
+# loop through tuple in list append in order of length
 for length, word in lst:
     rev.append(word)
 
