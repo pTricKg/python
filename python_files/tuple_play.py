@@ -2,11 +2,13 @@
 
 opn = input("Enter file: ")
 
+# file handling
 if len(opn) < 1: opn = "nineteen_eighty_four.txt"
 rd = open(opn)
 rd = rd.readlines()
 #print(rd)
 #print(opn)
+
 words = str(rd)
 words = words.split()
 print("word list: ",words)
