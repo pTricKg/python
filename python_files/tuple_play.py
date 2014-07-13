@@ -16,7 +16,7 @@ print("word list: ",words)
 lst = list()
 #print(lst)
 # loop through words to get length of words
-for word in rd:
+for word in words:
     lst.append((len(word), word))
 print("here is first loop: ",lst)
 lst.sort(reverse = True)
