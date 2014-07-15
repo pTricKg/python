@@ -35,11 +35,16 @@ d = {'a':101011, 'b':10010, 'c':101110}
 t = d.items()
 print(t)
 
-# stupid python 3 breaks the sort
+# stupid python 3 breaks the sort so following doesn't work
 t.sort()
 print(t)
 
+l = list()
 for key, value in d.items():
     print(key, value)
-    print(value, key)
+    l.append((value, key))
+    print(l)
+    l.sort(reverse=True)
+print(l)
+print(value, key)
 
