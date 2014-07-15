@@ -24,3 +24,7 @@ x,y,z = y, x, z
 print(x,y,z)
 print(y,x,z)
 
+addy = 'monty@python.org'
+uname, domain = addy.split('@')
+
+print(uname, domain)
