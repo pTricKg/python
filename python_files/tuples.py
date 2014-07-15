@@ -28,3 +28,12 @@ addy = 'monty@python.org'
 uname, domain = addy.split('@')
 
 print(uname, domain)
+
+
+# dicts and tuples
+d = {'a':101011, 'b':10010, 'c':101110}
+t = d.items()
+print(t)
+
+t.sort()
+print(t)
