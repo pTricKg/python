@@ -12,9 +12,15 @@ for length, word in t:
 
 print(res)
 
-#
+# assign tuples
 w = ['check', 'tuples', 'assignment']
 x, y, z = w # assign letters to words
 
 print(x, y, z)
+
+# swapping elements of tuple
+x,y,z = y, x, z
+
+print(x,y,z)
+print(y,x,z)
 
