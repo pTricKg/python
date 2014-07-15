@@ -35,5 +35,11 @@ d = {'a':101011, 'b':10010, 'c':101110}
 t = d.items()
 print(t)
 
+# stupid python 3 breaks the sort
 t.sort()
 print(t)
+
+for key, value in d.items():
+    print(key, value)
+    print(value, key)
+
