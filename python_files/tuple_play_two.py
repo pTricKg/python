@@ -1,6 +1,8 @@
 import string
 
-""" Playing with Tuples two  """
+""" Playing with Tuples two
+    This uses tuples, dicts, and lists
+    to count words; ten most common"""
 
 opn = input("Enter file: ")
 
