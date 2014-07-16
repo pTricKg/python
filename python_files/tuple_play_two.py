@@ -26,7 +26,7 @@ for line in rd:
 
 lst = list()
 for key, value in count.items(): # key and value both interation variables
-    lst.append((value, key))
+    lst.append((value, key))    
 
 lst.sort(reverse = True)
 
