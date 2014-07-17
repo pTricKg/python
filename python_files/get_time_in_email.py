@@ -32,18 +32,27 @@ for line in handle:
     else:
         continue
 lst = list()
+##mcount = None
+##mtime = None
 for tm, count in mydict.items():
-    lst.append(tm)
-    if tm in mydict:
-        count += 1
-    else:
-        count = count
-        
-    lst.sort()
-    print(lst)
-    print(lst, count)
+    lst.append((tm, count))
+##    if mcount is None or count > mcount:
+##        mcount = count
+##        mtime = tm
+##    lst.append(tm)
+##    if tm in mydict:
+##        count += 1
+##    else:
+##        count = count
+##        
+lst.sort()
+##    print(lst)
+##    print(lst, count)
+
     
-print(mydict)
+# print(mydict)
+
+print(lst)
 
 
     
