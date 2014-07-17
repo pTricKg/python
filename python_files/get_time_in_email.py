@@ -28,10 +28,22 @@ for line in handle:
 
         # or same as if else above:
         mydict[tm] = mydict.get(tm,0) + 1
-             
+        
     else:
         continue
-print(mydict, count)
+lst = list()
+for tm, count in mydict.items():
+    if tm in mydict:
+        count += 1
+        lst.append(tm)
+    else:
+        count = count
+        
+    lst.sort()
+    print(lst)
+    print(tm, count)
+    
+print(mydict)
 
 
     
