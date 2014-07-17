@@ -14,7 +14,6 @@ for line in handle:
         timesplt = time.split(':')
         
         tm = timesplt[0]
-        print(tm)
         
         count = count + 1
         
@@ -52,7 +51,10 @@ lst.sort()
     
 # print(mydict)
 
-print(lst)
+# print(lst)
+
+for tm, count in lst:
+    print(tm, count)
 
 
     
