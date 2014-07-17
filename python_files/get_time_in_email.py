@@ -33,15 +33,15 @@ for line in handle:
         continue
 lst = list()
 for tm, count in mydict.items():
+    lst.append(tm)
     if tm in mydict:
         count += 1
-        lst.append(tm)
     else:
         count = count
         
     lst.sort()
     print(lst)
-    print(tm, count)
+    print(lst, count)
     
 print(mydict)
 
