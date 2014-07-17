@@ -6,8 +6,8 @@ count = 0
 
 for line in handle:
     # pull lines that start with From with space after
-    if line.startswith("From "): #added  space to be sure not to include From:
-        #split that line
+    if line.startswith("From "): # added  space to be sure not to include From:
+        # split that line
         splt = line.split()
 
         time = splt[5]
