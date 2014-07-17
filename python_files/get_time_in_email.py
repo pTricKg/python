@@ -16,42 +16,17 @@ for line in handle:
         tm = timesplt[0]
         
         count = count + 1
-        
-##        if tm not in mydict:
-##            mydict[tm] = 1
-##            
-##        # then if it is, increment that by one
-##        else:
-##            mydict[tm] = mydict[tm] + 1
-##            print(mydict)
 
-        # or same as if else above:
         mydict[tm] = mydict.get(tm,0) + 1
         
     else:
         continue
 lst = list()
-##mcount = None
-##mtime = None
+
 for tm, count in mydict.items():
     lst.append((tm, count))
-##    if mcount is None or count > mcount:
-##        mcount = count
-##        mtime = tm
-##    lst.append(tm)
-##    if tm in mydict:
-##        count += 1
-##    else:
-##        count = count
-##        
+
 lst.sort()
-##    print(lst)
-##    print(lst, count)
-
-    
-# print(mydict)
-
-# print(lst)
 
 for tm, count in lst:
     print(tm, count)
