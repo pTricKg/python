@@ -1,3 +1,5 @@
+""" pull out most frequent email and print frequency """
+
 name = input("Enter file:")
 if len(name) < 1 : name = "mbox-short.txt"
 handle = open(name, 'r')
