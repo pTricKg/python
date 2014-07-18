@@ -1,3 +1,5 @@
+""" playing with tuples """
+
 txt = 'but soft what light in yonder window breaks'
 
 words = txt.split()
