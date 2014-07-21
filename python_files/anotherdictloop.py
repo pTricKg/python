@@ -44,8 +44,10 @@ for key in counts:
 
 ## This didnt't do what I needed
 mylst = []
+
 for key, value in counts.items():
     mylst.append([key, value])
+
 print(mylst)
 
 print(mylst.sort())
