@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Simple hangman game using animals
+""" Simple hangman game using animals """
 
 import random
 import urllib
