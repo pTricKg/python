@@ -3,7 +3,9 @@ import string
 """ Testing dictionarys """
 
 inpt = input('Enter your file name:')
+
 if len(inpt) < 1 : inpt = "nineteen_eighty_four.txt"
+
 try:
     inpt = open(inpt)
 except:
@@ -11,6 +13,7 @@ except:
     exit()
 
 counts = dict()
+
 for line in inpt:
     # add check for punctuation and remove if present
     for c in string.punctuation:
