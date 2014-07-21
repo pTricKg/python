@@ -36,6 +36,7 @@ def name_to_number(name):
         return 3
     elif name == "scissors":
         return 4
+
 # Greeting
 print("""
          iiiii     aaa     mmmm  mm
