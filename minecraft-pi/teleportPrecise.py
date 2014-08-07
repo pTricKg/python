@@ -14,3 +14,6 @@ z = 106.3
 
 # move player using floats with setPos
 mc.player.setPos(x,y,z)
+
+# move player using integers with:
+# mc.playler.setTilePos(x,y.z)
