@@ -7,4 +7,7 @@ x = 40
 y = 7
 z = 83 # should be homebase
 
+# actual teleport
+mc.player.setTilePos(x,y,z)
+
 
