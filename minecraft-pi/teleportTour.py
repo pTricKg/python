@@ -5,7 +5,6 @@ mc = minecraft.Minecraft.create()
 import time
 
 ''' Do not use coordinates > 127 on x and z'''
-
 x = 76
 y = 7
 z = 106
