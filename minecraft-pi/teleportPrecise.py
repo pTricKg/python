@@ -12,4 +12,5 @@ x = 76.4
 y = 7.1
 z = 106.3
 
+# move player using floats with setPos
 mc.player.setPos(x,y,z)
