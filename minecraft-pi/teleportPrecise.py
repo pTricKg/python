@@ -11,4 +11,5 @@ x = 76.4
 y = 7.1
 z = 106.3
 
+# moves player: setPos is for floats
 mc.player.setPos(x,y,z)
