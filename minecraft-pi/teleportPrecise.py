@@ -4,7 +4,6 @@ import mcpi.minecraft as minecraft
 mc = minecraft.Minecraft.create()
 
 ''' Do not use coordinates > 127 on x and z'''
-
 # coordinates to teleport to
 # home >
 x = 76.4
