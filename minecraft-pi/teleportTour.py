@@ -5,6 +5,7 @@ mc = minecraft.Minecraft.create()
 import time
 
 ''' Do not use coordinates > 127 on x and z'''
+
 x = 76
 y = 7
 z = 106
@@ -27,5 +28,5 @@ x = 76
 y = 7
 z = 106
 
-# move player
+# move player: setTile is for integers
 mc.player.setTilePos(x,y,z)
