@@ -24,7 +24,9 @@ blktype = 11
 
 mc.setBlock(x,y,z,blktype)
 
-# remove bottom
+# remove bottom block
 blktype = 0
 mc.setBlock(x,y - 1, z, blktype )
+
+""" this had cool effect of allowing lava flow """
 
