@@ -23,3 +23,8 @@ mc.setBlock(x,y,z,blktype)
 blktype = 11
 
 mc.setBlock(x,y,z,blktype)
+
+# remove bottom
+blktype = 0
+mc.setBlock(x,y - 1, z, blktype )
+
