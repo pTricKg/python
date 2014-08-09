@@ -10,7 +10,7 @@ x = 80
 y = 7
 z = 106
 
-blktype = 12
+blktype = 12 # sand
 
 # place block
 mc.setBlock(x,y,z,blktype)
