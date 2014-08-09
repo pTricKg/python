@@ -18,3 +18,8 @@ mc.setBlock(x,y,z,blktype)
 # place second block
 y = y + 1
 mc.setBlock(x,y,z,blktype)
+
+# change a block
+blktype = 11
+
+mc.setBlock(x,y,z,blktype)
