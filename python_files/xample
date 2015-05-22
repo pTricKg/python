@@ -1,0 +1,5 @@
+question = "What did you have for lunch?"
+print (question)
+answer = raw_input()
+ 
+print ("You had " + answer + "! That sounds delicious!")
