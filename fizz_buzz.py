@@ -6,6 +6,8 @@ count_fizz = 0
 count_buzz = 0
 
 while num < 100:
+
+    ## increment number each iteration
     num += 1
 
     ## check if divisible by 3
