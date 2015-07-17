@@ -23,6 +23,7 @@ while num < 100:
     ## or just print number
     else:
         print(num)
-        
+
+## finally, print count        
 print("Fuzz count: ", count_fizz)
 print("Buzz count: ", count_buzz)
