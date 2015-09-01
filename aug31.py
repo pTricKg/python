@@ -11,15 +11,7 @@ count = 0
 while count < len(word):
     
     for i in word:
-        if count == 1:
-            n = i.upper()
-            print(i)
-            word = word.replace(i, n)
-        elif count == len(word) - 2:
-            n = i.upper()
-            print(i)
-            word = word.replace(i, n)
-        elif i == "a":
+        if i == "a":
             word = word.replace(i,"x")
         elif i == "e":
             word = word.replace(i,"x")
@@ -29,6 +21,14 @@ while count < len(word):
             word = word.replace(i,"x")
         elif i == "u":
             word = word.replace(i,"x")
+        elif count == 1:
+            n = i.upper()
+            print(i)
+            word = word.replace(i, n)
+        elif count == len(word) - 2:
+            n = i.upper()
+            print(i)
+            word = word.replace(i, n)
     
         count += 1
         print(count)    
