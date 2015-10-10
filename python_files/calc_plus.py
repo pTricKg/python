@@ -30,6 +30,7 @@ def num_compare(): #Compare 2 numbers to determine the larger
     return
 
 def print_string(): #Print the previously stored string
+    print (saved_string)
     return
 
 def calculator(): #Basic Calculator (addition, subtraction, multiplication, division)
@@ -39,12 +40,13 @@ def accept_and_store(): #Accept and store a string
     return
 
 def main(): #menu goes here
-    select = [remove_letter, num_compare] # list for menu
+    select = [remove_letter, num_compare, print_string] # list for menu
 
     while(True):
         print ("Please select operation:")
         print ("1. Remove a letter")
         print ("2. Greater of two numbers")
+        print ("3. Your string")
         user_select = input("Please make selection: ")
 
         if user_select == "":
