@@ -34,6 +34,15 @@ def print_string(): #Print the previously stored string
     return
 
 def calculator(): #Basic Calculator (addition, subtraction, multiplication, division)
+    calc_dict = {'+': operator.add , '-' : operator.sub , '*' : operator.mul ,
+                 '/' : operator.truediv}
+
+    num = int(input("Enter first number: "))
+    op = str(input("Enter +, -, *, or /: "))
+    num2 = int(input("Enter next number: "))
+
+    print (calc_dict[op](num, num2))
+    
     return
 
 def accept_and_store(): #Accept and store a string
@@ -42,14 +51,15 @@ def accept_and_store(): #Accept and store a string
     return
 
 def main(): #menu goes here
-    select = [accept_and_store, remove_letter, num_compare, print_string] # list for menu
+    select = [accept_and_store, remove_letter, num_compare, calculator, print_string] # list for menu
 
     while(True):
         print ("Please select operation:")
         print ("1. Enter string")
         print ("2. Remove a letter")
         print ("3. Greater of two numbers")
-        print ("4. Your string")
+        print ("4. Simple calculator")
+        print ("5. Your string")
         user_select = input("Please make selection: ")
 
         if user_select == "":
