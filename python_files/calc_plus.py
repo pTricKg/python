@@ -19,6 +19,14 @@ def remove_letter(): #Remove a selected letter from a string
     return
 
 def num_compare(): #Compare 2 numbers to determine the larger
+    num = int(input("Enter first number to compare: "))
+    num2 = int(input("Enter second number to compare: "))
+    if num > num2:
+        print (num, " is greater")
+    elif num2 > num:
+        print (num2, " is greater")
+    else:
+        print ("Numbers are equal")
     return
 
 def print_string(): #Print the previously stored string
