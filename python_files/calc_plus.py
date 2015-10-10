@@ -39,6 +39,16 @@ def accept_and_store(): #Accept and store a string
     return
 
 def main(): #menu goes here
+    select = [remove_letter, num_compare] # list for menu
+
+    while(True):
+        print ("Please select operation:")
+        print ("1. Remove a letter")
+        print ("2. Greater of two numbers")
+        user_select = int(input("Please make selection: "))
+        user_select -= 1 # reduce 
+        select[user_select]()
+        
     return
 
 main()
