@@ -45,9 +45,15 @@ def main(): #menu goes here
         print ("Please select operation:")
         print ("1. Remove a letter")
         print ("2. Greater of two numbers")
-        user_select = int(input("Please make selection: "))
-        user_select -= 1 # reduce 
-        select[user_select]()
+        user_select = input("Please make selection: ")
+
+        if user_select == "":
+            print ("You have exited program")
+            raise SystemExit
+        elif user_select != "":
+            user_select = int(user_select)
+            user_select -= 1 # reduce 
+            select[user_select]()
         
     return
 
