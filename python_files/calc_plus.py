@@ -15,7 +15,7 @@ def remove_letter(): #Remove a selected letter from a string
             user_string = user_string[:indx] + user_string[indx + 1::]
             str_len -= 1
         indx += 1
-    print("Your string: %s" % user_string)
+    print("\nYour string: %s" % user_string)
     
     return
 
@@ -31,7 +31,7 @@ def num_compare(): #Compare 2 numbers to determine the larger
     return
 
 def print_string(): #Print the previously stored string
-    print (saved_string)
+    print ("Your string: ", saved_string)
     return
 
 def calculator(): #Basic Calculator (addition, subtraction, multiplication, division)
@@ -49,27 +49,28 @@ def calculator(): #Basic Calculator (addition, subtraction, multiplication, divi
 def accept_and_store(): #Accept and store a string
     global saved_string
     saved_string = str(input("Please input a string: "))
+    print ("You entered: ", saved_string)
     return
 
 def main(): #menu goes here
     select = [accept_and_store, remove_letter, num_compare, calculator, print_string] # list for menu
 
     while(True):
-        print ("Please select operation:")
+        print ("\nPlease select operation:")
         print ("1. Enter string")
         print ("2. Remove a letter")
         print ("3. Greater of two numbers")
         print ("4. Simple calculator")
         print ("5. Your string")
-        user_select = input("Please make selection: ")
+        user_select = input("\nPlease make selection: ")
 
         if user_select == "":
             print ("You have exited program")
             raise SystemExit
-        elif user_select != int:
-            print ("\nPlease enter integer for selection\n")
+        elif len(user_select) > 1:
+            print ("\nPlease enter integer for selection")
             main()
-        elif user_select != "":
+        else:
             user_select = int(user_select)
             user_select -= 1 # reduce 
             select[user_select]()
