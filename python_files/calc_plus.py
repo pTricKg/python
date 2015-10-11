@@ -12,7 +12,7 @@ def remove_letter(): #Remove a selected letter from a string
     while (indx < str_len):
         if user_string[indx] == remove_letter:
             user_string = user_string[:indx] + user_string[indx + 1::]
-        str_len -= 1
+            str_len -= 1
         indx += 1
     print("Your string: %s" % user_string)
     
