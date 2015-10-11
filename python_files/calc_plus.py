@@ -10,11 +10,13 @@ def remove_letter(): #Remove a selected letter from a string
     str_len = len(user_string)
 
     while (indx < str_len):
-        print (user_string[indx])
+        print (indx)
         if user_string[indx] == remove_letter:
             user_string = user_string[:indx] + user_string[indx + 1::]
             str_len -= 1
-        indx += 1
+        else: 
+            indx += 1 ## moved to else so loop checks all indices
+                
     print("\nYour string: %s" % user_string)
     
     return
@@ -67,7 +69,7 @@ def main(): #menu goes here
         if user_select == "":
             print ("You have exited program")
             raise SystemExit
-        elif len(user_select) > 1:
+        elif len(user_select) > 1: ## Simple input check
             print ("\nPlease enter integer for selection")
             main()
         else:
