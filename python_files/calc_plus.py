@@ -10,20 +10,21 @@ def remove_letter(): #Remove a selected letter from a string
     str_len = len(user_string)
 
     while (indx < str_len):
-        
+
         if user_string[indx] == remove_letter:
             user_string = user_string[:indx] + user_string[indx + 1::]
             str_len -= 1
-        else: 
+        else:
             indx += 1 ## moved to else so loop checks all indices
-                
+
     print("\nYour string: %s" % user_string)
-    
+
     return
 
 def num_compare(): #Compare 2 numbers to determine the larger
     num = int(input("Enter first number to compare: "))
     num2 = int(input("Enter second number to compare: "))
+    
     if num > num2:
         print (num, " is greater")
     elif num2 > num:
@@ -45,7 +46,7 @@ def calculator(): #Basic Calculator (addition, subtraction, multiplication, divi
     num2 = int(input("Enter next number: "))
 
     print (calc_dict[op](num, num2))
-    
+
     return
 
 def accept_and_store(): #Accept and store a string
@@ -74,8 +75,8 @@ def main(): #menu goes here
             main()
         else:
             user_select = int(user_select)
-            user_select -= 1 # reduce 
+            user_select -= 1 # reduce
             select[user_select]()
-     return
+    return
 
 main()
