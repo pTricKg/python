@@ -5,10 +5,12 @@ num = 0
 
 count_fizz = 0
 count_buzz = 0
+count_fizzbuzz = 0
 
 while num < 100:
     num += 1
     if num % 5 == 0 and num % 3 == 0:
+        count_fizzbuzz += 1
         print(num, '= fizzbuzz')
     ## check if divisible by 3
     elif num % 3 == 0:
@@ -22,3 +24,4 @@ while num < 100:
         print(num)
 print("Fuzz count: ", count_fizz)
 print("Buzz count: ", count_buzz)
+print("FizzBuzz count: ", count_fizzbuzz)
