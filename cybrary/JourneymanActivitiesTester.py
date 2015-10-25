@@ -37,24 +37,24 @@ def journeymantest2():
     print "Test 2: SUCCESS\n"
     return 0
 
-##def journeymantest3():
-##    message_list = ['alpha' , 'bravo' , 'charlie' , 'delta']
-##    
-##    for i in message_list:
-##        res = journeyman3()
-##        if res != i:
-##            print "Failed: %s != %s" % (res , i)
-##            return -1
-##        print res
-##    print "Test 3: SUCCESS\n"
-##
-##def journeymantest4():
-##    journeyman4()
+def journeymantest3():
+    message_list = ['alpha' , 'bravo' , 'charlie' , 'delta']
+    
+    for i in message_list:
+        res = journeyman3()
+        if res != i:
+            print "Failed: %s != %s" % (res , i)
+            return -1
+        print res
+    print "Test 3: SUCCESS\n"
+
+def journeymantest4():
+    journeyman4()
 
 def main():
     journeymantest1()
     journeymantest2()
     #journeymantest3()
-    #journeymantest4()
+    journeymantest4()
 
 main()
