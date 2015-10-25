@@ -50,7 +50,7 @@ def journeyman2(final_num):
 on port 50001 and returns the message it receives.'''
 def journeyman3():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #create socket
-    s.connect(('127.0.0.1',50001))
+    s.connect(('',50023))
     received_string = s.recv(1024)
     s.close()
     return received_string
