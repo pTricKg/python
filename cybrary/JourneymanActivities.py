@@ -73,13 +73,13 @@ def journeyman4():
             self.hair = hair
             self.eye = eye
 
+        def print_info(self):
+            print "Height:\t%d\nWeight:\t%d\nHair:\t%s\nEye:\t%s\n" % (self.height , self.weight , self.hair , self.eye)
+
             
 
     Me = Person(6, 190, 'Black', 'Black')
-    print Me.height
-    print Me.weight
-    print Me.hair
-    print Me.eye
+    print Me.print_info()
     return
     
 
