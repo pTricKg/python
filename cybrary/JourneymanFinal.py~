@@ -27,7 +27,7 @@ def save_data(conn):
 
 def main():
 	HOST = ''
-	PORT = 50001
+	PORT = 50005
 	options = ['SAVE' , 'LOAD']
 	file_list = []
 	while(True):
