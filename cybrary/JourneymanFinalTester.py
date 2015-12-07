@@ -1,6 +1,6 @@
 import socket
 
-PORT = 50002
+PORT = 50001
 
 files = {
         "File1" : "The quick brown fox jumped over the lazy dogs" ,
@@ -11,16 +11,16 @@ files = {
 
 for i in files:
     s = socket.socket(socket.AF_INET , socket.SOCK_STREAM)
-    s.connect(('127.0.1.1', PORT))
-    s.send("SAVE")
+    s.connect(('127.0.0.1', PORT))
+    s.send("SAVE ")
     s.send(i)
     s.send(files[i])
     s.close()
 
 for i in files:
     s = socket.socket(socket.AF_INET , socket.SOCK_STREAM)
-    s.connect(('127.0.1.1', PORT))
-    s.send("LOAD")
+    s.connect(('127.0.0.1', PORT))
+    s.send("LOAD ")
     s.send(i)
     data = s.recv(1024)
     if data != files[i]:
@@ -28,7 +28,7 @@ for i in files:
     s.close()
     
 s = socket.socket(socket.AF_INET , socket.SOCK_STREAM)
-s.connect(('127.0.1.1', PORT))
+s.connect(('127.0.0.1', PORT))
 s.send("LOAD")
 s.send("File4")
 data = s.recv(1024)
